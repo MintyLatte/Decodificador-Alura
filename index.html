@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="reset">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+        
+    <body>
+        <header>
+            <nav class="encabezado">
+                <h1><img src="imagenes/Logo.png" alt="logo" class="imagen-encabezado"></h1>
+            </nav>
+        </header>   
+        <main>
+
+            <section>
+                <div class="lado-derecho">
+                    <textarea id="textoCaja" cols="50" rows="20" class="texto-caja" placeholder="Ingrese el texto aquí" ></textarea> 
+                    <p class="restricciones" id="advertencia"> <img src="imagenes/Vector (1).png" alt="icono"> Solo letras minúsculas y sin acentos</p>
+    
+                    <div class="botones-encriptador">
+                        <button class="boton-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="boton-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="lado-izquierdo">
+    
+                        <textarea class="rectangulo" id="textoFinal" cols="30" rows="10"></textarea>
+                        
+                        <img src="imagenes/Muñeco.png" alt="muñeco" class="imagen-muñeco" id="img-muñeco">   
+                        
+                        <div class="parrafos-rectangulo">
+                            <div id="mensaje">
+                                <p class="Mensaje-notfound">Ningún mensaje fue encontrado</p>
+                                <p class="Mensaje1">Ingresa el texto que desees encriptar o desencriptar.</p>
+                            </div>
+                            <button class="boton-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+
+                        </div> 
+                </div>
+                          
+            </section>
+    
+            <script src="function.js"></script>
+
+        </main>
+       
+
+    </body>
+
+</html>
